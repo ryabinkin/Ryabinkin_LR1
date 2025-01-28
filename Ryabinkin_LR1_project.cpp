@@ -48,7 +48,7 @@ int main() {
                 break;
             case 2:
                 cout << "Введите цифру D (в диапазоне 1-9): \n";
-                cin >> D;
+                enterD();
                 break;
             case 3:
                 cout << "Результат добавления D справа: " << addDigitRight(K, D) << endl;
