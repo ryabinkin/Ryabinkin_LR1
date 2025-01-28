@@ -21,6 +21,13 @@ int enterK(){
     return K;
 
 }
+
+int enterD(){
+    cin >> D;
+    return D;
+}
+
+
 int main() {
     int choice;
 
