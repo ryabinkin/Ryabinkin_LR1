@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-
+int K, D;
 // Функция для добавления цифры D справа от числа K
 int addDigitRight(int K, int D) {
     return K * 10 + D;
@@ -16,8 +16,12 @@ int addDigitLeft(int K, int D) {
     return stoi(result_str); // Преобразуем строку обратно в число
 }
 
+int enterK(){
+    cin >> K;
+    return K;
+
+}
 int main() {
-    int K, D;
     int choice;
 
     do {
@@ -33,7 +37,7 @@ int main() {
         switch (choice) {
             case 1:
                 cout << "Введите натуральное число K: \n";
-                cin >> K;
+                enterK();
                 break;
             case 2:
                 cout << "Введите цифру D (в диапазоне 1-9): \n";
